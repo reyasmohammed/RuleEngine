@@ -3,21 +3,26 @@ using System.Threading.Tasks;
 
 namespace RuleEngine
 {
-    public class Rule<TContext> : IRule<TContext>
+    public abstract class Rule<TContext> : IRule<TContext>
     {
-        public Task Invoke(TContext context)
+        protected readonly RuleHandler<TContext> Next;
+
+        protected Rule(RuleHandler<TContext> next)
         {
-            throw new System.NotImplementedException();
+            Next = next;
+        }
+        public virtual Task Invoke(TContext context)
+        {
+            if (CanExecute(context))
+                return Execute(context);
+
+            return Next != null
+                    ? Next(context)
+                    : Task.CompletedTask;
         }
 
-        public Task Execute(TContext context)
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract Task Execute(TContext context);
 
-        public bool CanExecute(TContext context)
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract bool CanExecute(TContext context);
     }
 }
