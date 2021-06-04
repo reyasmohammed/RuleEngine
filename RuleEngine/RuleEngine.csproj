@@ -4,8 +4,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Contracts\IRuleContext.cs" />
-  </ItemGroup>
-
 </Project>
