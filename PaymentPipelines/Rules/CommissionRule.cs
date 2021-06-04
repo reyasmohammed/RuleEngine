@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace PaymentPipelines.Rules
 {
+    /// <summary>
+    /// Rule definition for Commision Addition
+    /// </summary>
     public class CommissionRule : Rule<CartItemContext>
     {
         public CommissionRule(RuleHandler<CartItemContext> next) : base(next)

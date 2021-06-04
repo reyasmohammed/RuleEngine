@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace PaymentPipelines.Rules
 {
+    /// <summary>
+    /// Rule definition for Packing Slip
+    /// </summary>
     public class PackingSlipRule : Rule<CartItemContext>
     {
         public PackingSlipRule(RuleHandler<CartItemContext> next) : base(next)

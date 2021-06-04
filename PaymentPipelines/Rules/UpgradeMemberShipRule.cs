@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace PaymentPipelines.Rules
 {
+    /// <summary>
+    /// Rule definition for Membership Upgrade
+    /// </summary>
     public class UpgradeMemberShipRule : Rule<CartItemContext>
     {
         public UpgradeMemberShipRule(RuleHandler<CartItemContext> next) : base(next)

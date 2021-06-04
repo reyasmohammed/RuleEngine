@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 namespace PaymentPipelines.Model.Context
 {
+    /// <summary>
+    /// Cart Item Context
+    /// </summary>
     public class CartItemContext : IRuleContext<CartItem>
     {
         public CartItemContext()

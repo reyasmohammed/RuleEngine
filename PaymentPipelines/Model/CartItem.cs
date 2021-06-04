@@ -2,6 +2,9 @@
 
 namespace PaymentPipelines.Model
 {
+    /// <summary>
+    /// Product information
+    /// </summary>
     public class CartItem
     {
         public int Id { get; set; }

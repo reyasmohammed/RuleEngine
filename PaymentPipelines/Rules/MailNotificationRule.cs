@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace PaymentPipelines.Rules
 {
+    /// <summary>
+    /// Rule definition for Sending Mails
+    /// </summary>
     public class MailNotificationRule : Rule<CartItemContext>
     {
         public MailNotificationRule(RuleHandler<CartItemContext> next) : base(next)

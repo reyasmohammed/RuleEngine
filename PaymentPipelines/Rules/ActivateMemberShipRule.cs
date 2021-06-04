@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace PaymentPipelines.Rules
 {
+    /// <summary>
+    /// Rule definition for Membership Activation
+    /// </summary>
     public class ActivateMemberShipRule : Rule<CartItemContext>
     {
         public ActivateMemberShipRule(RuleHandler<CartItemContext> next) : base(next)

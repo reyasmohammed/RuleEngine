@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace PaymentPipelines.Rules
 {
+    /// <summary>
+    /// Rule definition for Royalty Packign Slip
+    /// </summary>
     public class RoyaltyPackingSlipRule : Rule<CartItemContext>
     {
         public RoyaltyPackingSlipRule(RuleHandler<CartItemContext> next) : base(next)

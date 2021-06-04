@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace PaymentPipelines.Rules
 {
+    /// <summary>
+    /// Rule definition for Video check
+    /// </summary>
     public class FirstAidVideoRule : Rule<CartItemContext>
     {
         public FirstAidVideoRule(RuleHandler<CartItemContext> next) : base(next)
