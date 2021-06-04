@@ -3,7 +3,7 @@ using Xunit;
 
 namespace RuleEngine.UnitTest
 {
-    public class RuleUniTest
+    public class RulePipelineUnitTest
     {
         [Fact]
         public void Test1()
